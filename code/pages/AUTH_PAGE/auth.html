@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>user-auth</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js" defer></script>
+  <script src="/code/campuscrib.js" defer></script> 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <link rel="stylesheet" href="campuscrib-auth-system.css">
+<link rel="icon" href="/Assets/header/Images/campus-logo.svg" type="image/svg+xml">
+
+</head>
+<body>
+  <!-- <div class="prod-logo">
+    <span class="company-logo">Campuscrib</span>
+  </div> -->
+  <div class="auth-wrapper">
+    <!--Form-Container-->
+    <div class="form-box">
+      <!--SignupForm-->
+      <form id="signupForm" onsubmit="handleSignup(event)" active >
+        <h2 class="head-text">Create Account</h2>
+        <div class="auth-content">
+        <button type="button" class="account-switch">Already have an account? <span class="login-swap">Login here</span></button>
+        <input type="text" id="signupName" placeholder="Full Name">
+        <input type="email" id="signupEmail" placeholder="Email">
+        <small class="error" id="emailError"></small>
+        <input type="tel" id="signupNumber" placeholder="Phone Number">
+        <small class="error" id="numberError"></small>
+        <input type="password" id="signupPassword" placeholder="Password">
+        <small class="error" id="passwordError"></small>
+        
+        <button type="submit" class="swap" id="continueBtn" disabled>Sign up</button>
+        </div>
+      </form>
+
+      <form id="loginForm" onsubmit="handleLogin(event)">
+        <h2 class="head-text">Login</h2>
+        <div class="auth-content">
+        <button type="button" class="account-switch" >New Here? <span class="login-swap">Signup Here</span></button>
+        <input type="email" id="loginEmail" placeholder="Email">
+        <small class="error" id="LoginemailError"></small>
+        <input type="password" id="loginPassword" placeholder="Password">
+        <small class="error" id="LoginpasswordError"></small>
+        <button type="submit" class="swap" id="loginBtn" disabled>Login</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+  
+  
+</body>
+</html>
