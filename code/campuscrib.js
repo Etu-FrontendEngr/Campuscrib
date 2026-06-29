@@ -1,4 +1,5 @@
 
+
 document.addEventListener("DOMContentLoaded", function () {
   let index = 0;
 
@@ -328,3 +329,11 @@ L.marker([lat, lon]).addTo(map)
 }, function() {
   console.log("Location access denied");
 });
+
+// const SignupBtn = document.getElementById("signup-button");
+
+// SignupBtn.addEventListener(
+//   "click", function() {
+//     window.location.href =
+//     "auth.html"; 
+// });
