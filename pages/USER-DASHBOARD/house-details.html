@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" href="/Assets/header/Images/campus-logo.svg" type="image/svg+xml">
+  <script src="/code/campuscrib.js" defer></script>
+  <link rel="stylesheet" href="/code/pages/USER-DASHBOARD/product-detail-page.css">
+<link rel="stylesheet" href="https://unpkg.com/leafles/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
+https://maps.locationiq.com/v3/staticmap?key=<YOUR_ACCESS_TOKEN>&center=<latitude>,<longitude>&zoom=<zoom>&size=<width>x<height>&format=<format>&maptype=<MapType>&markers=icon:<icon>|<latitude>,<longitude>&markers=icon:<icon>|<latitude>,<longitude></longitude>
+</head>
+<body>
+  <div class="header">
+    <div class="username_profile-image">
+      <div class="username">
+        <span>Hi Etu Miracle</span>
+      </div>
+      <div class="user-image"> 
+        <img src="/Assets/header/Images/borno-state.gif">
+      </div>
+    </div>
+    <div class="search-bar">
+      <input type="search" placeholder="Search City, University or Property" id="search-houses">
+    </div>
+    <div class="user-panel">
+      <div class="selectschool-panel">
+      <i class="bx bxs-map"></i>
+      <select name="universities-location" id="universities-locations" class="school-location">
+        <option value="" disabled selected>select school location</option>
+          <option value="Delsu">Student</option>
+          <option value="vendor">Vendor</option>
+      </select>
+      </div>
+      <div class="menu">
+        <span>Menu</span>
+        <i class="bx bx-menu"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="upper-master">
+
+   <div class="current-page">
+      <span class="screen">
+        Accomodation/Property
+      </span>
+      </div>
+ 
+      <div class="house-master">
+    <div class="master-1">
+      <img src="/Assets/rooms for use/images (23).jpeg" alt="3-bedroom">
+    </div>
+    <div class="master-2">
+      <div class="sub-1">
+      <img src="/Assets/rooms for use/92018700.jpg" alt="room">
+      <img src="/Assets/rooms for use/8398927.jpg" alt="room">
+      </div>
+      <div class="sub-2">
+        <img src="/Assets/rooms for use/f063a9f971fddfaed369bd9c02053d1a.jpg" alt="room">
+        <div class="vr">
+        <img src="/Assets/rooms for use/H768f16c3a9a746278d8b50042afd0421Y.jpg" alt="room">
+      <div class="vr-overlay"></div>  
+      <div class="text-vr">VR</div>
+      </div>
+        <img src="/Assets/rooms for use/92018700.jpg" alt="room">
+      </div>
+    </div>
+    </div>
+    <div class="properties-details">
+      <div class="details">
+        <div class="first-detail">
+          <div class="left">
+          <h2>Beckton House, Nottingham</h2>
+          <p>Station Road, Nottingham NG9 2WW</p>
+          <span class="distance"><i class="bx bx-map-pin"></i> 4.0 miles from City Center</span>
+          <span class="amount-cont">From <span class="amount-main">£199</span>/per week</span>
+          </div>
+          <div class="middle">
+            <span class="offering">
+              <i class="bx bxs-tag icon"></i> 6 offers</span>
+          </div>
+          <div class="right">
+            <div class="icon-heart-love">
+            <i class="bx bx-heart heart-icon"></i>
+            </div>
+            <div class="map">
+              <img src="/Assets/map/map-image.png" alt="map-image">
+              <div class="overlay"></div>
+              <div class="text">View on map</div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="second-detail">
+          <h3>Offers</h3>
+          <div class="offer-6">
+            <section class="offer active">
+              <i class="bx bxs-tag iconify"></i>
+              <div class="text-offer">
+                <h4 class="active-headtext">Additional Cashback Offer from BSH</h4>
+                <p class="active-paragraph">&euro;100 BSH Exclusive Cashback</p>
+              </div>
+              <div class="arrow-more-details">
+                <i class="bx bxs-chevron-right icon-arrow"></i>
+              </div>
+            </section>
+            <section class="offer active">
+              <i class="bx bxs-tag iconify"></i>
+              <div class="text-offer">
+                <h4 class="active-headtext">Book Now And Get &euro;1000 Cashback. T&C's Apply</h4>
+                <p class="active-paragraph">&euro;Excluding Club Studios</p>
+              </div>
+              <div class="arrow-more-details">
+                <i class="bx bxs-chevron-right icon-arrow"></i>
+              </div>
+            </section>
+            <section class="offer">
+              <i class="bx bxs-tag iconify"></i>
+              <div class="text-offer">
+                <h4 class="active-headtext">No Visa, No Pay & No Place, No Pay</h4>
+                <p class="active-paragraph">&euro;100 BSH Exclusive Cashback</p>
+              </div>
+              <div class="arrow-more-details">
+                <i class="bx bxs-chevron-right icon-arrow"></i>
+              </div>
+            </section>
+            <section class="offer">
+              <i class="bx bxs-tag iconify"></i>
+              <div class="text-offer">
+                <h4 class="active-headtext">Additional Cashback Offer from BSH</h4>
+                <p class="active-paragraph">&euro;100 BSH Exclusive Cashback</p>
+              </div>
+              <div class="arrow-more-details">
+                <i class="bx bxs-chevron-right icon-arrow"></i>
+              </div>
+            </section>
+            <section class="offer">
+              <i class="bx bxs-tag iconify"></i>
+              <div class="text-offer">
+                <h4 class="active-headtext">Additional Cashback Offer from BSH</h4>
+                <p class="active-paragraph">&euro;100 BSH Exclusive Cashback</p>
+              </div>
+              <div class="arrow-more-details">
+                <i class="bx bxs-chevron-right icon-arrow"></i>
+              </div>
+            </section>
+            <section class="offer">
+              <i class="bx bxs-tag iconify"></i>
+              <div class="text-offer">
+                <h4 class="active-headtext">Additional Cashback Offer from BSH</h5>
+                <p class="active-paragraph">&euro;100 BSH Exclusive Cashback</p>
+              </div>
+              <div class="arrow-more-details">
+                <i class="bx bxs-chevron-right icon-arrow"></i>
+              </div>
+            </section>
+            </div>
+         
+
+
+      </div>
+      </div>
+      <div class="real-map" id="map">
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
